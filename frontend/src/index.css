@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* SPE Brand Colors - Light mode (not primary use case, dark is default) */
+    --spe-navy: 0.12 0.025 240;
+    --spe-surface: 0.15 0.022 240;
+    --spe-card: 0.18 0.02 240;
+    --spe-teal: 0.72 0.16 195;
+    --spe-cyan: 0.80 0.13 210;
+    --spe-text: 0.95 0.01 240;
+    --spe-muted: 0.60 0.02 240;
+
+    /* Shadcn tokens - mapped to dark theme as default */
+    --radius: 0.75rem;
+    --background: 0.12 0.025 240;
+    --foreground: 0.95 0.01 240;
+    --card: 0.18 0.02 240;
+    --card-foreground: 0.95 0.01 240;
+    --popover: 0.15 0.022 240;
+    --popover-foreground: 0.95 0.01 240;
+    --primary: 0.72 0.16 195;
+    --primary-foreground: 0.12 0.025 240;
+    --secondary: 0.18 0.02 240;
+    --secondary-foreground: 0.95 0.01 240;
+    --muted: 0.20 0.018 240;
+    --muted-foreground: 0.60 0.02 240;
+    --accent: 0.20 0.018 240;
+    --accent-foreground: 0.95 0.01 240;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.72 0.16 195 / 15%;
+    --input: 0.72 0.16 195 / 15%;
+    --ring: 0.72 0.16 195;
+    --chart-1: 0.72 0.16 195;
+    --chart-2: 0.80 0.13 210;
+    --chart-3: 0.70 0.18 280;
+    --chart-4: 0.75 0.18 150;
+    --chart-5: 0.65 0.20 30;
+    --sidebar: 0.15 0.022 240;
+    --sidebar-foreground: 0.95 0.01 240;
+    --sidebar-primary: 0.72 0.16 195;
+    --sidebar-primary-foreground: 0.12 0.025 240;
+    --sidebar-accent: 0.18 0.02 240;
+    --sidebar-accent-foreground: 0.95 0.01 240;
+    --sidebar-border: 0.72 0.16 195 / 15%;
+    --sidebar-ring: 0.72 0.16 195;
+  }
+
+  .dark {
+    --background: 0.12 0.025 240;
+    --foreground: 0.95 0.01 240;
+    --card: 0.18 0.02 240;
+    --card-foreground: 0.95 0.01 240;
+    --popover: 0.15 0.022 240;
+    --popover-foreground: 0.95 0.01 240;
+    --primary: 0.72 0.16 195;
+    --primary-foreground: 0.12 0.025 240;
+    --secondary: 0.18 0.02 240;
+    --secondary-foreground: 0.95 0.01 240;
+    --muted: 0.20 0.018 240;
+    --muted-foreground: 0.60 0.02 240;
+    --accent: 0.20 0.018 240;
+    --accent-foreground: 0.95 0.01 240;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.205 0 0;
+    --border: 0.72 0.16 195 / 15%;
+    --input: 0.72 0.16 195 / 15%;
+    --ring: 0.72 0.16 195;
+    --sidebar: 0.15 0.022 240;
+    --sidebar-foreground: 0.95 0.01 240;
+    --sidebar-primary: 0.72 0.16 195;
+    --sidebar-primary-foreground: 0.12 0.025 240;
+    --sidebar-accent: 0.18 0.02 240;
+    --sidebar-accent-foreground: 0.95 0.01 240;
+    --sidebar-border: 0.72 0.16 195 / 15%;
+    --sidebar-ring: 0.72 0.16 195;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .bg-spe-navy {
+    background-color: oklch(var(--spe-navy));
+  }
+  .bg-spe-surface {
+    background-color: oklch(var(--spe-surface));
+  }
+  .bg-spe-card {
+    background-color: oklch(var(--spe-card));
+  }
+  .text-spe-text {
+    color: oklch(var(--spe-text));
+  }
+  .text-spe-muted {
+    color: oklch(var(--spe-muted));
+  }
+  .text-spe-teal {
+    color: oklch(var(--spe-teal));
+  }
+  .text-spe-cyan {
+    color: oklch(var(--spe-cyan));
+  }
+  .bg-spe-teal\/10 {
+    background-color: oklch(var(--spe-teal) / 0.10);
+  }
+  .bg-spe-teal\/5 {
+    background-color: oklch(var(--spe-teal) / 0.05);
+  }
+  .bg-spe-cyan\/10 {
+    background-color: oklch(var(--spe-cyan) / 0.10);
+  }
+  .bg-spe-cyan\/8 {
+    background-color: oklch(var(--spe-cyan) / 0.08);
+  }
+  .bg-spe-cyan\/5 {
+    background-color: oklch(var(--spe-cyan) / 0.05);
+  }
+  .border-spe-teal\/10 {
+    border-color: oklch(var(--spe-teal) / 0.10);
+  }
+  .border-spe-teal\/20 {
+    border-color: oklch(var(--spe-teal) / 0.20);
+  }
+  .border-spe-teal\/30 {
+    border-color: oklch(var(--spe-teal) / 0.30);
+  }
+  .border-spe-teal\/40 {
+    border-color: oklch(var(--spe-teal) / 0.40);
+  }
+  .border-spe-teal\/50 {
+    border-color: oklch(var(--spe-teal) / 0.50);
+  }
+  .border-spe-cyan\/20 {
+    border-color: oklch(var(--spe-cyan) / 0.20);
+  }
+  .ring-spe-teal\/30 {
+    --tw-ring-color: oklch(var(--spe-teal) / 0.30);
+  }
+  .shadow-spe-teal\/20 {
+    --tw-shadow-color: oklch(var(--spe-teal) / 0.20);
+  }
+  .shadow-spe-teal\/25 {
+    --tw-shadow-color: oklch(var(--spe-teal) / 0.25);
+  }
+  .shadow-spe-teal\/40 {
+    --tw-shadow-color: oklch(var(--spe-teal) / 0.40);
+  }
+  .shadow-spe-cyan\/20 {
+    --tw-shadow-color: oklch(var(--spe-cyan) / 0.20);
+  }
+  .fill-spe-teal {
+    fill: oklch(var(--spe-teal));
+  }
+  .from-spe-teal {
+    --tw-gradient-from: oklch(var(--spe-teal));
+    --tw-gradient-to: oklch(var(--spe-teal) / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  .to-spe-cyan {
+    --tw-gradient-to: oklch(var(--spe-cyan));
+  }
+  .via-spe-teal\/5 {
+    --tw-gradient-via: oklch(var(--spe-teal) / 0.05);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to);
+  }
+  .via-spe-teal\/30 {
+    --tw-gradient-via: oklch(var(--spe-teal) / 0.30);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to);
+  }
+}

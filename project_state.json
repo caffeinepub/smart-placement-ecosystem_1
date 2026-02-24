@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Smart Placement Ecosystem - AI-powered placement platform with a responsive landing page featuring navbar, hero, about, how-it-works, statistics, contact, and footer sections built with React, TypeScript, and Tailwind CSS.",
+  "architectural_notes": [
+    "Built with React + TypeScript + Tailwind CSS",
+    "Dark theme using gray-950/gray-900 backgrounds with purple/cyan gradient accents",
+    "Sticky navbar with scroll-triggered background change and mobile hamburger menu",
+    "Statistics section uses static data; planned to connect to backend APIs later"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Abstract AI neural network dark gradient hero background with glowing teal and cyan node connections on a deep navy background (hero-bg.dim_1440x800.png)\n- Minimal flat logo mark for 'Smart Placement Ecosystem' — a stylized 'S' or abstract node-graph icon in teal and white on transparent background (spe-logo.dim_128x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-sticky-responsive-navbar-with-the-smart-placement-ecosystem-logo-navigation-links-home-about-how-it-works-contact-login-and-register-buttons-a-mobile-hamburger-menu-toggle-and-a-background-color-change-on-scroll",
+      "title": "Build a sticky responsive Navbar with the 'Smart Placement Ecosystem' logo, navigation links (Home, About, How It Works, Contact), Login and Register buttons, a mobile hamburger menu toggle, and a background color change on scroll.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-hero-section-with-the-headline-ai-powered-smart-placement-platform-a-short-descriptive-subtitle-explaining-the-platform-s-purpose-and-two-call-to-action-buttons-get-started-and-login",
+      "title": "Build a Hero Section with the headline 'AI-Powered Smart Placement Platform', a short descriptive subtitle explaining the platform's purpose, and two call-to-action buttons: 'Get Started' and 'Login'.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-section-that-explains-the-problem-with-traditional-placement-systems-how-the-ai-based-system-improves-job-matching-and-why-it-is-useful-for-both-students-and-recruiters",
+      "title": "Build an About Section that explains the problem with traditional placement systems, how the AI-based system improves job matching, and why it is useful for both students and recruiters.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-how-it-works-section-displaying-4-sequential-steps-as-cards-1-student-uploads-resume-2-ai-analyzes-skills-3-system-matches-relevant-jobs-4-recruiter-shortlists-candidates-each-step-should-have-a-step-number-icon-or-visual-indicator-title-and-short-description",
+      "title": "Build a 'How It Works' Section displaying 4 sequential steps as cards: (1) Student uploads resume, (2) AI analyzes skills, (3) System matches relevant jobs, (4) Recruiter shortlists candidates. Each step should have a step number, icon or visual indicator, title, and short description.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-statistics-section-displaying-four-static-platform-metrics-total-number-of-students-number-of-partner-companies-total-applications-submitted-and-placement-success-rate-display-these-as-visually-prominent-stat-cards",
+      "title": "Build a Statistics Section displaying four static platform metrics: total number of students, number of partner companies, total applications submitted, and placement success rate. Display these as visually prominent stat cards.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-section-with-a-section-heading-a-brief-contact-invite-message-and-basic-contact-details-email-address-and-or-a-simple-contact-form-placeholder",
+      "title": "Build a Contact Section with a section heading, a brief contact invite message, and basic contact details (email address and/or a simple contact form placeholder).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-footer-with-quick-navigation-links-home-about-how-it-works-contact-basic-contact-information-and-the-smart-placement-ecosystem-brand-name",
+      "title": "Build a Footer with quick navigation links (Home, About, How It Works, Contact), basic contact information, and the 'Smart Placement Ecosystem' brand name.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-entire-landing-page-is-fully-responsive-the-navbar-collapses-to-a-hamburger-menu-on-mobile-all-sections-stack-vertically-on-small-screens-and-text-buttons-and-cards-adapt-appropriately-to-desktop-tablet-and-mobile-breakpoints-using-tailwind-css-responsive-utilities",
+      "title": "Ensure the entire landing page is fully responsive: the navbar collapses to a hamburger menu on mobile, all sections stack vertically on small screens, and text, buttons, and cards adapt appropriately to desktop, tablet, and mobile breakpoints using Tailwind CSS responsive utilities.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-modern-saas-visual-theme-with-a-dark-to-rich-gradient-palette-e-g-deep-navy-to-teal-or-dark-slate-to-emerald-clean-typography-generous-spacing-card-based-component-structure-and-subtle-gradient-accents-on-buttons-and-section-backgrounds-the-design-should-feel-appropriate-for-an-ai-powered-enterprise-platform",
+      "title": "Apply a cohesive modern SaaS visual theme with a dark-to-rich gradient palette (e.g., deep navy to teal or dark slate to emerald), clean typography, generous spacing, card-based component structure, and subtle gradient accents on buttons and section backgrounds. The design should feel appropriate for an AI-powered enterprise platform.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-hero-background-image-and-logo-as-static-assets-from-frontend-public-assets-generated-and-use-them-in-the-hero-section-and-navbar-respectively",
+      "title": "Render the generated hero background image and logo as static assets from frontend/public/assets/generated and use them in the Hero Section and Navbar respectively.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "gameProjectType": "none",
+  "projectName": "Smart Placement Ecosystem",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,257 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Smart Placement Ecosystem – Responsive Landing Page",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a sticky responsive Navbar with logo, navigation links, Login/Register buttons, mobile hamburger menu, and background color change on scroll",
+      "acceptanceCriteria": [
+        "Navbar sticks to the top of the viewport on scroll",
+        "Navbar background changes visually when user scrolls down",
+        "Hamburger menu appears on small screens and toggles the nav links",
+        "Logo text 'Smart Placement Ecosystem' is visible in the navbar",
+        "Login and Register buttons are visible on desktop and accessible from the mobile menu"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "create",
+          "description": "Create a responsive navbar component with sticky positioning, scroll-based background color change, hamburger menu toggle for mobile, navigation links (Home, About, How It Works, Contact) as anchor links, Login and Register buttons, and the generated logo image from frontend/public/assets/generated/spe-logo.dim_128x128.png. Include state for scroll detection and mobile menu toggle."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Navbar component at the top of the app layout, above all other sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Build a Hero Section with headline, subtitle, and two CTA buttons",
+      "acceptanceCriteria": [
+        "Hero section displays the headline 'AI-Powered Smart Placement Platform' prominently",
+        "A short subtitle paragraph is visible below the headline",
+        "Two CTA buttons ('Get Started' and 'Login') are displayed and styled consistently with the theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create a hero section component with the headline 'AI-Powered Smart Placement Platform', a short descriptive subtitle explaining the platform's purpose, and two call-to-action buttons ('Get Started' and 'Login'). Use the generated background image frontend/public/assets/generated/hero-bg.dim_1440x800.png as the section background. Apply gradient overlays and modern SaaS styling with generous spacing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the HeroSection component below the Navbar in the app layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Build an About Section explaining the problem, solution, and benefits",
+      "acceptanceCriteria": [
+        "About section contains a heading and descriptive content covering the three listed points",
+        "Content is readable and well-structured with appropriate spacing"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "create",
+          "description": "Create an About section component with a heading and three content blocks explaining: (1) the problem with traditional placement systems, (2) how the AI-based system improves job matching, and (3) why it is useful for both students and recruiters. Apply consistent spacing and typography hierarchy. Add an id attribute 'about' for anchor navigation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the AboutSection component below the HeroSection in the app layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build a 'How It Works' Section with 4 sequential step cards",
+      "acceptanceCriteria": [
+        "Four step cards are displayed in order",
+        "Each card shows a step number, title, and short description",
+        "Cards are arranged horizontally on desktop and stack vertically on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HowItWorksSection.tsx",
+          "operation": "create",
+          "description": "Create a 'How It Works' section component displaying 4 sequential step cards: (1) Student uploads resume, (2) AI analyzes skills, (3) System matches relevant jobs, (4) Recruiter shortlists candidates. Each card should include a step number, icon or visual indicator, title, and short description. Use Tailwind responsive utilities to arrange cards horizontally on desktop and stack vertically on mobile. Add an id attribute 'how-it-works' for anchor navigation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the HowItWorksSection component below the AboutSection in the app layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Build a Statistics Section displaying four static platform metrics as stat cards",
+      "acceptanceCriteria": [
+        "Four stat cards are displayed with a label and a static number each",
+        "Cards are responsive and wrap on smaller screens",
+        "Numbers are visually prominent (large font size)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/StatisticsSection.tsx",
+          "operation": "create",
+          "description": "Create a Statistics section component displaying four static metric cards: total number of students, number of partner companies, total applications submitted, and placement success rate. Each card should show a large number and a descriptive label. Use Tailwind responsive utilities to wrap cards on smaller screens. Numbers should be visually prominent with large font sizes."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the StatisticsSection component below the HowItWorksSection in the app layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Build a Contact Section with heading, invite message, and contact details",
+      "acceptanceCriteria": [
+        "Contact section is reachable via the 'Contact' nav link anchor",
+        "Section displays at minimum a heading and contact information or a placeholder form"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "create",
+          "description": "Create a Contact section component with a section heading, a brief contact invite message, and basic contact details (email address and/or a simple contact form placeholder). Add an id attribute 'contact' for anchor navigation from the navbar."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the ContactSection component below the StatisticsSection in the app layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Build a Footer with quick navigation links, contact information, and brand name",
+      "acceptanceCriteria": [
+        "Footer displays quick links that scroll to the respective sections",
+        "Footer includes contact information",
+        "Brand name is visible in the footer"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create a Footer component with quick navigation links (Home, About, How It Works, Contact) as anchor links, basic contact information, and the 'Smart Placement Ecosystem' brand name. Apply consistent footer styling with proper spacing and layout."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the Footer component at the bottom of the app layout, after all other sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Ensure the entire landing page is fully responsive across desktop, tablet, and mobile breakpoints",
+      "acceptanceCriteria": [
+        "All sections are usable and readable at mobile viewport widths (< 640px)",
+        "Navbar hamburger menu works correctly on small screens",
+        "No horizontal overflow on any screen size"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure the main app container uses responsive layout classes and proper overflow handling to prevent horizontal scroll. Verify all sections stack vertically on mobile and adapt to desktop, tablet, and mobile breakpoints using Tailwind responsive utilities."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Verify the navbar hamburger menu toggle works correctly on small screens (< 640px) and navigation links are accessible from the mobile menu."
+        },
+        {
+          "path": "frontend/src/components/HowItWorksSection.tsx",
+          "operation": "modify",
+          "description": "Verify step cards arrange horizontally on desktop and stack vertically on mobile using Tailwind responsive utilities."
+        },
+        {
+          "path": "frontend/src/components/StatisticsSection.tsx",
+          "operation": "modify",
+          "description": "Verify stat cards wrap appropriately on smaller screens using Tailwind responsive utilities."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Apply a cohesive modern SaaS visual theme with dark-to-rich gradient palette, clean typography, card-based structure, and gradient accents",
+      "acceptanceCriteria": [
+        "A consistent color palette and gradient theme is applied across all sections",
+        "Typography hierarchy is clear (headings, subheadings, body text)",
+        "Buttons use gradient or themed styling consistent with the overall design",
+        "Card components have consistent border-radius, shadow, and padding"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define a cohesive modern SaaS visual theme with a dark-to-rich gradient palette (deep navy to teal or dark slate to emerald). Add CSS custom properties for primary gradient colors, establish clear typography hierarchy for headings and body text, and define reusable gradient classes for buttons and section backgrounds. Ensure generous spacing throughout."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend the Tailwind theme with custom gradient color stops (e.g., navy, teal, emerald), define consistent card styling utilities (border-radius, shadow), and ensure the theme supports the modern SaaS aesthetic appropriate for an AI-powered enterprise platform."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Apply gradient theme styling to the hero section including gradient overlays on the background image and gradient-styled CTA buttons consistent with the overall design theme."
+        },
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent typography hierarchy, spacing, and background gradient or theme colors to the About section."
+        },
+        {
+          "path": "frontend/src/components/HowItWorksSection.tsx",
+          "operation": "modify",
+          "description": "Apply card-based styling to step cards with consistent border-radius, shadow, padding, and gradient accents. Ensure visual consistency with the overall theme."
+        },
+        {
+          "path": "frontend/src/components/StatisticsSection.tsx",
+          "operation": "modify",
+          "description": "Apply card-based styling to stat cards with consistent border-radius, shadow, padding, and gradient accents. Ensure numbers are visually prominent and aligned with the theme."
+        },
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Apply consistent theme styling, typography, and spacing to the Contact section."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Apply consistent theme styling, typography, and spacing to the Footer component."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Render the generated hero background image and logo as static assets in the Hero Section and Navbar",
+      "acceptanceCriteria": [
+        "Hero section displays the generated background image",
+        "Navbar displays the generated logo image"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Ensure the hero section uses the generated background image from frontend/public/assets/generated/hero-bg.dim_1440x800.png as the section background. Reference the exact workspace file path in the implementation."
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Ensure the navbar displays the generated logo image from frontend/public/assets/generated/spe-logo.dim_128x128.png. Reference the exact workspace file path in the implementation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "kind": "build_request",
+  "title": "Smart Placement Ecosystem – Responsive Landing Page",
+  "projectName": "Smart Placement Ecosystem",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Build a sticky responsive Navbar with the 'Smart Placement Ecosystem' logo, navigation links (Home, About, How It Works, Contact), Login and Register buttons, a mobile hamburger menu toggle, and a background color change on scroll.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Navigation links: Home, About, How It Works, Contact",
+          "Login and Register buttons",
+          "Mobile hamburger menu",
+          "Sticky navbar on scroll",
+          "Background change when scrolling"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navbar sticks to the top of the viewport on scroll",
+        "Navbar background changes visually when user scrolls down",
+        "Hamburger menu appears on small screens and toggles the nav links",
+        "Logo text 'Smart Placement Ecosystem' is visible in the navbar",
+        "Login and Register buttons are visible on desktop and accessible from the mobile menu"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a Hero Section with the headline 'AI-Powered Smart Placement Platform', a short descriptive subtitle explaining the platform's purpose, and two call-to-action buttons: 'Get Started' and 'Login'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Main headline: 'AI-Powered Smart Placement Platform'",
+          "Short description explaining the purpose",
+          "Call-to-action buttons (Get Started / Login)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays the headline 'AI-Powered Smart Placement Platform' prominently",
+        "A short subtitle paragraph is visible below the headline",
+        "Two CTA buttons ('Get Started' and 'Login') are displayed and styled consistently with the theme"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build an About Section that explains the problem with traditional placement systems, how the AI-based system improves job matching, and why it is useful for both students and recruiters.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "The problem with traditional placement systems",
+          "How this AI-based system improves job matching",
+          "Why it is useful for students and recruiters"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About section contains a heading and descriptive content covering the three listed points",
+        "Content is readable and well-structured with appropriate spacing"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build a 'How It Works' Section displaying 4 sequential steps as cards: (1) Student uploads resume, (2) AI analyzes skills, (3) System matches relevant jobs, (4) Recruiter shortlists candidates. Each step should have a step number, icon or visual indicator, title, and short description.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Student uploads resume",
+          "AI analyzes skills",
+          "System matches relevant jobs",
+          "Recruiter shortlists candidates"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Four step cards are displayed in order",
+        "Each card shows a step number, title, and short description",
+        "Cards are arranged horizontally on desktop and stack vertically on mobile"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Build a Statistics Section displaying four static platform metrics: total number of students, number of partner companies, total applications submitted, and placement success rate. Display these as visually prominent stat cards.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Number of students",
+          "Number of companies",
+          "Total applications",
+          "Placement success rate",
+          "Currently, these are static numbers"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Four stat cards are displayed with a label and a static number each",
+        "Cards are responsive and wrap on smaller screens",
+        "Numbers are visually prominent (large font size)"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build a Contact Section with a section heading, a brief contact invite message, and basic contact details (email address and/or a simple contact form placeholder).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Navigation links: Home, About, How It Works, Contact"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact section is reachable via the 'Contact' nav link anchor",
+        "Section displays at minimum a heading and contact information or a placeholder form"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Build a Footer with quick navigation links (Home, About, How It Works, Contact), basic contact information, and the 'Smart Placement Ecosystem' brand name.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Quick links",
+          "Contact information",
+          "Basic branding"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer displays quick links that scroll to the respective sections",
+        "Footer includes contact information",
+        "Brand name is visible in the footer"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Ensure the entire landing page is fully responsive: the navbar collapses to a hamburger menu on mobile, all sections stack vertically on small screens, and text, buttons, and cards adapt appropriately to desktop, tablet, and mobile breakpoints using Tailwind CSS responsive utilities.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "The website is fully responsive",
+          "Navbar converts into hamburger menu on small screens",
+          "Sections stack vertically on mobile",
+          "Layout works on desktop, tablet, and mobile"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All sections are usable and readable at mobile viewport widths (< 640px)",
+        "Navbar hamburger menu works correctly on small screens",
+        "No horizontal overflow on any screen size"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Apply a cohesive modern SaaS visual theme with a dark-to-rich gradient palette (e.g., deep navy to teal or dark slate to emerald), clean typography, generous spacing, card-based component structure, and subtle gradient accents on buttons and section backgrounds. The design should feel appropriate for an AI-powered enterprise platform.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Modern SaaS-style layout",
+          "Clean UI with proper spacing",
+          "Gradient theme (AI-related colors)",
+          "Card-based structure",
+          "Simple user-friendly interface"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A consistent color palette and gradient theme is applied across all sections",
+        "Typography hierarchy is clear (headings, subheadings, body text)",
+        "Buttons use gradient or themed styling consistent with the overall design",
+        "Card components have consistent border-radius, shadow, and padding"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Render the generated hero background image and logo as static assets from frontend/public/assets/generated and use them in the Hero Section and Navbar respectively.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Project logo: Smart Placement Ecosystem"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays the generated background image",
+        "Navbar displays the generated logo image"
+      ]
+    }
+  ],
+  "constraints": [
+    "All landing page sections must be single-page with anchor-based navigation (no routing required for the landing page itself)",
+    "Statistics values are static — do not connect them to a backend data source at this stage",
+    "Do not edit any files under frontend/src/hooks/ or frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Login and registration page functionality",
+    "Student Dashboard UI",
+    "Recruiter Dashboard UI",
+    "Backend API integration",
+    "Machine learning or AI feature implementation",
+    "Dynamic statistics from a backend",
+    "User authentication"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Abstract AI neural network dark gradient hero background with glowing teal and cyan node connections on a deep navy background (hero-bg.dim_1440x800.png)",
+      "Minimal flat logo mark for 'Smart Placement Ecosystem' — a stylized 'S' or abstract node-graph icon in teal and white on transparent background (spe-logo.dim_128x128.png)"
+    ],
+    "edits": []
+  }
+}

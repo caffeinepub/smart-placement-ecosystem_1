@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report mapping each UI feature (Navbar, Hero, About, How It Works, Statistics, etc.) to their implementing files, components, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "JSON object containing one-sentence descriptions of each frontend source file, summarizing the purpose and key contents of every component and config file.",
+  "frontend/index.css": "Global Tailwind CSS entry file defining OKLCH-based CSS custom properties for light and dark theme tokens including background, foreground, card, sidebar, and chart colors.",
+  "frontend/index.html": "HTML shell for the React SPA titled 'Smart Placement Ecosystem' that mounts the app into a root div and loads the main TypeScript module.",
+  "frontend/src/App.tsx": "Root React component that composes the full single-page layout by rendering Navbar, HeroSection, AboutSection, HowItWorksSection, StatisticsSection, ContactSection, and Footer in sequence.",
+  "frontend/src/components/AboutSection.tsx": "About section rendering three color-coded cards covering traditional placement problems, AI-driven job matching, and benefits for students and recruiters, each with an icon and step number.",
+  "frontend/src/components/ContactSection.tsx": "Contact section with email, phone, and location info cards alongside a controlled form with name, email, and message fields that shows a success state on submission.",
+  "frontend/src/components/Footer.tsx": "Site footer with the SPE logo, brand tagline, social media icon links, quick navigation anchors, contact details, dynamic copyright year, and a caffeine.ai attribution link.",
+  "frontend/src/components/HeroSection.tsx": "Renders the landing page hero section with a background image, gradient overlays, animated glow orbs, headline, CTA buttons (Get Started, Login), and trust indicator stats.",
+  "frontend/src/components/HowItWorksSection.tsx": "Displays a four-step process section (Upload Resume, AI Analyzes, Match Jobs, Recruiter Shortlists) as a responsive grid with icons, step numbers, and connector lines.",
+  "frontend/src/components/Navbar.tsx": "Fixed top navigation bar with scroll-aware styling, smooth-scroll nav links, Login/Register buttons, and a collapsible mobile hamburger menu.",
+  "frontend/src/components/StatisticsSection.tsx": "Renders a platform statistics section showing four key metrics (students, companies, applications, placement rate) in a responsive card grid.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor using React Query, returning either an authenticated or anonymous actor based on the current Internet Identity, and invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an InternetIdentityProvider context and useInternetIdentity hook for managing DFINITY AuthClient login, logout, and identity state with status tracking.",
+  "frontend/src/index.css": "Global stylesheet that imports Inter font, sets up Tailwind directives, and defines SPE brand color tokens (navy, teal, cyan) as OKLCH CSS variables for both light and dark themes, plus custom utility classes.",
+  "frontend/src/main.tsx": "React app entry point that mounts the root component wrapped with TanStack QueryClientProvider and a custom InternetIdentityProvider for authentication context.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration that maps OKLCH CSS variables to semantic color tokens (primary, card, sidebar, spe brand colors), extends border radius, box shadows, and registers typography, container-queries, and animate plugins.",
+  "project_state.json": "Project state manifest (version 3) describing the Smart Placement Ecosystem landing page features (navbar, hero, about, how-it-works, statistics, contact, footer), architectural notes, and image requirements."
+}
